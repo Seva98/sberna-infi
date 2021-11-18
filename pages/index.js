@@ -26,7 +26,7 @@ export default function Home({ materials, news, deviceType }) {
   return (
     <Layout>
       <section>
-        <div className="row mx-auto my-3 justify-content-center align-items-center gy-3" style={{ maxWidth: '999px' }}>
+        <div className="row mx-auto my-3 justify-content-center align-items-center gy-3" style={{ maxWidth: '1200px' }}>
           <div className="col-sm-9 mx-auto shadow ">
             <Image src={banner1} layout="responsive" objectFit="" width={999} height={218} alt="vraky" />
           </div>
