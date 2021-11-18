@@ -12,16 +12,28 @@ import bcrypt from 'bcryptjs';
 import News from '../components/homepage/news';
 import CarWreck from '../components/homepage/carWreck';
 import Image from 'next/image';
+import banner1 from '../assets/images/banner1.svg';
+import banner2 from '../assets/images/banner2.png';
+import { useEffect, useState } from 'react';
 
 export default function Home({ materials, news, deviceType }) {
   const [session, loading] = useSession();
 
+  const [width, setWidth] = useState(576);
+  const updateSize = () => setWidth(window.innerWidth);
+  useEffect(() => (window.onresize = updateSize), []);
+
   return (
     <Layout>
       <section>
-        <div className="my-5 mx-auto shadow" style={{ maxWidth: '999px' }}>
-          <Image src="/assets/images/vraky.svg" layout="responsive" objectFit="" width={999} height={218} alt="vraky" />
-          {/* <CarWreck /> */}
+        <div className="row mx-auto my-3 justify-content-center align-items-center gy-3" style={{ maxWidth: '999px' }}>
+          <div className="col-sm-9 mx-auto shadow ">
+            <Image src={banner1} layout="responsive" objectFit="" width={999} height={218} alt="vraky" />
+          </div>
+          {/* <div style={{ maxWidth: '16px' }}></div> */}
+          <div className="col-sm-3 shadow" style={{ padding: '0', width: width >= 576 ? '23.58%' : '100%' }}>
+            <Image src={banner2} layout="responsive" objectFit="contain" width={1430} height={958} alt="oteviracka" />
+          </div>
         </div>
       </section>
       <section>

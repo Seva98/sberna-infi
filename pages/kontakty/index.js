@@ -2,8 +2,9 @@ import Layout from '../../components/common/layout';
 import GoogleMap from '../../components/homepage/googleMap';
 import ContactsCard from '../../components/contacts/contactsCard';
 import sberna from '../../assets/images/sberna.jpeg';
-import hrebo from '../../assets/images/hrebo.png';
+import hrebo from '../../assets/images/hrebo.jpeg';
 import marek from '../../assets/images/marek.png';
+import sykora from '../../assets/images/sykora.jpeg';
 
 const Kontakty = () => {
   return (
@@ -38,7 +39,7 @@ const Kontakty = () => {
               <ContactsCard image={marek} name="Marek Elšík" subtitle="Nákupčí" phone="+420 724 104 673" email="elsik@lhstore.cz" />
             </div>
             <div className="col-4">
-              <ContactsCard image={marek} name="Jiří Sýkora" subtitle="Likvidace autovraků" phone="+420 606 577 677" email="autovraky@centrum.cz" />
+              <ContactsCard image={sykora} name="Jiří Sýkora" subtitle="Likvidace autovraků" phone="+420 606 577 677" email="autovraky@centrum.cz" />
             </div>
           </div>
         </div>
