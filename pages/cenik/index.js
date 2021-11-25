@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import EditableMaterialsTable from '../../components/admin/editableMaterialsTable';
+import Image from 'next/image';
 import Layout from '../../components/common/layout';
 import MainCategoriesSwitcher from '../../components/prices/mainCategoriesSwitcher';
 import MaterialsTable from '../../components/prices/materialsTable';
@@ -10,6 +10,11 @@ const Cenik = ({ mainCategories, categories, materials }) => {
   return (
     <Layout>
       <MainCategoriesSwitcher mainCategories={mainCategories} activeMainCategory={activeMainCategory} onChange={(c) => setMainCategory(c)} />
+      <div className="text-center my-2">
+        <a href="https://play.google.com/store/apps/details?id=com.sevcikdev.sbernakrmelin" target="_blank">
+          <Image src="/assets/images/google-play.png" width={224} height={70} alt="Google play app" />
+        </a>
+      </div>
       <div className="container">
         <MaterialsTable materials={materials} categories={categories} activeMainCategory={activeMainCategory} />
       </div>
