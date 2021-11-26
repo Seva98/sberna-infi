@@ -22,7 +22,7 @@ const QuickContacts = () => {
             </tr>
           </tbody>
         </table>
-        <a href="https://play.google.com/store/apps/details?id=com.sevcikdev.sbernakrmelin" target="_blank">
+        <a href="https://play.google.com/store/apps/details?id=com.sevcikdev.sbernakrmelin" target="_blank" rel="noreferrer">
           <Image src="/assets/images/google-play.svg" width={256} height={80} alt="Google play app" />
         </a>
       </ShortInfo>
