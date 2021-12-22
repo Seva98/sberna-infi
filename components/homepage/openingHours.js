@@ -64,7 +64,7 @@ const OpeningHours = () => {
             <th className="text-end" colSpan={2}>
               28.12. - 30.12.
             </th>
-            <td>Otevřeno</td>
+            <td>Otevřeno od 9</td>
           </tr>
           <tr>
             <th className="text-end" colSpan={2}>
