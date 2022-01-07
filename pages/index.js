@@ -31,9 +31,9 @@ export default function Home({ materials, news, deviceType }) {
             <Image src={banner1} layout="responsive" objectFit="" width={999} height={218} alt="vraky" />
           </div>
           {/* <div style={{ maxWidth: '16px' }}></div> */}
-          <div className="col-sm-3 shadow" style={{ padding: '0', width: width >= 576 ? '23.58%' : '100%' }}>
+          {/* <div className="col-sm-3 shadow" style={{ padding: '0', width: width >= 576 ? '23.58%' : '100%' }}>
             <Image src={banner2} layout="responsive" objectFit="contain" width={1430} height={958} alt="oteviracka" />
-          </div>
+          </div> */}
         </div>
       </section>
       <section>

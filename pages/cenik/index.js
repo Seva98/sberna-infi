@@ -11,8 +11,11 @@ const Cenik = ({ mainCategories, categories, materials }) => {
     <Layout>
       <MainCategoriesSwitcher mainCategories={mainCategories} activeMainCategory={activeMainCategory} onChange={(c) => setMainCategory(c)} />
       <div className="text-center my-2">
-        <a href="https://play.google.com/store/apps/details?id=com.sevcikdev.sbernakrmelin" target="_blank" rel="noreferrer">
+        <a href="https://play.google.com/store/apps/details?id=com.sevcikdev.sbernakrmelin" className="me-2" target="_blank" rel="noreferrer">
           <Image src="/assets/images/google-play.svg" width={258} height={80} alt="Google play app" />
+        </a>
+        <a href="https://apps.apple.com/cz/app/cen%C3%ADk-kovu/id1603506834?l=cs" className="ms-2" target="_blank" rel="noreferrer">
+          <Image src="/assets/images/appstore.svg" width={256} height={80} alt="Google play app" />
         </a>
       </div>
       <div className="container">

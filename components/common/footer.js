@@ -2,6 +2,11 @@ export default function Footer() {
   return (
     <footer className="theme-bg-primary" style={{ marginBottom: '-24px' }}>
       <div className="container text-center p-5">
+        <div>
+          <a href="#" id="open_preferences_center">
+            Upravit preference cookies
+          </a>
+        </div>
         <div>Všechna práva vyhrazena © {new Date().getFullYear()} LH Store s.r.o.</div>
         <div>
           <span>Made by </span>

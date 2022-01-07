@@ -49,29 +49,6 @@ const OpeningHours = () => {
             <th className="text-end">Neděle</th>
             <td colSpan="2">Zavřeno</td>
           </tr>
-          <tr>
-            <td colSpan={3}>
-              <div className="h5">Vánoční otevírací doba</div>
-            </td>
-          </tr>
-          <tr>
-            <th className="text-end" colSpan={2}>
-              23.12. - 27.12.
-            </th>
-            <td>Zavřeno</td>
-          </tr>
-          <tr>
-            <th className="text-end" colSpan={2}>
-              28.12. - 30.12.
-            </th>
-            <td>Otevřeno od 9:00</td>
-          </tr>
-          <tr>
-            <th className="text-end" colSpan={2}>
-              31.12. - 2.1.
-            </th>
-            <td>Zavřeno</td>
-          </tr>
         </tbody>
       </table>
     </ShortInfo>
