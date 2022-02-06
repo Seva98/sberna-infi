@@ -7,7 +7,7 @@ const ContactsCard = ({ name, subtitle, phone, email, image, children }) => {
     <div className="card border-0 shadow-lg pt-5 my-5 position-relative">
       <div className="card-body">
         <div className="member-profile position-absolute w-100 text-center" style={{ top: '-50px', left: '0px', height: '100px' }}>
-          <Image src={image} width="100" height="100" className="rounded-circle mx-auto d-inline-block shadow-sm" alt={name} />
+          <Image src={image} width="100" height="100" className="rounded-circle mx-auto d-inline-block shadow-sm" objectFit="cover" alt={name} />
         </div>
         <div className="card-text pt-1">
           <h5 className="member-name mb-0 text-center text-primary font-weight-bold">{name}</h5>

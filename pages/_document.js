@@ -15,7 +15,7 @@ class MyDocument extends Document {
             dangerouslySetInnerHTML={{
               __html: `
 document.addEventListener('DOMContentLoaded', function () {
-cookieconsent.run({"notice_banner_type":"simple","consent_type":"implied","palette":"light","language":"cs","page_load_consent_levels":["strictly-necessary","functionality","tracking","targeting"],"notice_banner_reject_button_hide":false,"preferences_center_close_button_hide":false,"page_refresh_confirmation_buttons":false,"website_name":"sbernakrmelin.cz","open_preferences_center_selector":"#open_preferences_center"});
+cookieconsent && cookieconsent.run({"notice_banner_type":"simple","consent_type":"implied","palette":"light","language":"cs","page_load_consent_levels":["strictly-necessary","functionality","tracking","targeting"],"notice_banner_reject_button_hide":false,"preferences_center_close_button_hide":false,"page_refresh_confirmation_buttons":false,"website_name":"sbernakrmelin.cz","open_preferences_center_selector":"#open_preferences_center"});
 });
  `,
             }}
