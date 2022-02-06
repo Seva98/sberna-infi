@@ -33,17 +33,17 @@ const Kontakty = () => {
             </div>
           </div>
           <div className="row">
-            <div className="col-3">
+            <div className="col-md-6 col-xl-3">
               <ContactsCard image={hrebo} name="Ing. Lukáš Hrebík" subtitle="Jednatel" phone="+420 736 642 927" email="hrebik@lhstore.cz" />
             </div>
-            <div className="col-3">
+            <div className="col-md-6 col-xl-3">
               <ContactsCard image={marek} name="Marek Elšík" subtitle="Nákupčí" phone="+420 724 104 673" email="elsik@lhstore.cz" />
             </div>
-            <div className="col-3">
+            <div className="col-md-6 col-xl-3">
               <ContactsCard image={sykora} name="Jiří Sýkora" subtitle="Likvidace autovraků" phone="+420 606 577 677" email="autovraky@centrum.cz" />
             </div>
-            <div className="col-3">
-              <ContactsCard image={terka} name="Ing. Tereza Hrebíková" subtitle="Ekonom" phone="+420 721 913 428" email="hrebikovat@gmail.com" />
+            <div className="col-md-6 col-xl-3">
+              <ContactsCard image={terka} name="Ing. Tereza Hrebíková" subtitle="Ekonom" phone="+420 721 913 428" email="hrebikova@lhstore.cz" />
             </div>
           </div>
         </div>

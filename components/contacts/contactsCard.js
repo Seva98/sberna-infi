@@ -18,14 +18,14 @@ const ContactsCard = ({ name, subtitle, phone, email, image, children }) => {
               <table className="table mx-auto w-auto table-contact">
                 <tbody>
                   <tr>
-                    <th>Telefon</th>
-                    <td>
+                    <th className="px-0">Telefon</th>
+                    <td className="px-0">
                       <a href={`tel:${phone.replace(/\s/g, '')}`}>{phone}</a>
                     </td>
                   </tr>
                   <tr>
-                    <th>Email</th>
-                    <td>
+                    <th className="px-0">Email</th>
+                    <td className="px-0">
                       <a href={`mailto:${email}`}>{email}</a>
                     </td>
                   </tr>
