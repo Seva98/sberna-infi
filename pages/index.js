@@ -12,9 +12,11 @@ import bcrypt from 'bcryptjs';
 import News from '../components/homepage/news';
 import CarWreck from '../components/homepage/carWreck';
 import Image from 'next/image';
+import bannerhavirov from '../assets/images/bannerhavirov.svg';
 import banner1 from '../assets/images/banner1.svg';
 import banner2 from '../assets/images/banner2.svg';
 import { useEffect, useState } from 'react';
+import Link from 'next/link';
 
 export default function Home({ materials, news, deviceType }) {
   const [session, loading] = useSession();
@@ -28,10 +30,15 @@ export default function Home({ materials, news, deviceType }) {
       <section>
         <div className="row mx-auto my-3 justify-content-center align-items-center gy-3" style={{ maxWidth: '1200px' }}>
           <div className="col-sm-9 mx-auto shadow ">
+            <Link href="https://sbernahavirov.cz">
+              <Image src={bannerhavirov} layout="responsive" objectFit="" width={999} height={218} alt="havirov" />
+            </Link>
+          </div>
+          <div className="col-sm-9 mx-auto shadow ">
             <Image src={banner1} layout="responsive" objectFit="" width={999} height={218} alt="vraky" />
           </div>
           <div className="col-sm-9 mx-auto shadow ">
-            <Image src={banner2} layout="responsive" objectFit="" width={999} height={218} alt="vraky" />
+            <Image src={banner2} layout="responsive" objectFit="" width={999} height={218} alt="vozik" />
           </div>
           {/* <div style={{ maxWidth: '16px' }}></div> */}
           {/* <div className="col-sm-3 shadow" style={{ padding: '0', width: width >= 576 ? '23.58%' : '100%' }}>
