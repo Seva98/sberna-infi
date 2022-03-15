@@ -29,7 +29,7 @@ export default function Home({ materials, news, deviceType }) {
     <Layout>
       <section>
         <div className="row mx-auto my-3 justify-content-center align-items-center gy-3" style={{ maxWidth: '1200px' }}>
-          <div className="col-sm-9 mx-auto">
+          <div className="col-sm-9 mx-auto" style={{ cursor: 'pointer' }}>
             <Link href="https://sbernahavirov.cz">
               <Image src={bannerhavirov} layout="responsive" objectFit="" width={999} height={218} alt="havirov" />
             </Link>
