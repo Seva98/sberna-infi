@@ -42,6 +42,9 @@ const Navbar = () => {
             <div className={`nav-item nav-link me-4 ${router.pathname === '/kontakty' && 'is-active'}`}>
               <Link href="/kontakty">Kontakty</Link>
             </div>
+            <div className={`nav-item nav-link me-4`}>
+              <Link href="https://www.sbernahavirov.cz/">Sběrna Havířov</Link>
+            </div>
             {/* <div className={`nav-item nav-link me-4 ${router.pathname === '/o-nas' && 'is-active'}`}>
               <Link href="/o-nas">O nás</Link>
             </div> */}

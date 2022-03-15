@@ -9,41 +9,31 @@ const OpeningHours = () => {
           <tr>
             <th className="text-end">Pondělí</th>
             <td>8:00-11:30</td>
-            <td>
-              12:30-16:00 <del>17:00</del>
-            </td>
+            <td>12:30-16:00</td>
           </tr>
           <tr>
             <th className="text-end">Úterý</th>
             <td>8:00-11:30</td>
-            <td>
-              12:30-16:00 <del>17:00</del>
-            </td>
+            <td>12:30-16:00</td>
           </tr>
           <tr>
             <th className="text-end">Středa</th>
             <td>8:00-11:30</td>
-            <td>
-              12:30-16:00 <del>17:00</del>
-            </td>
+            <td>12:30-16:00</td>
           </tr>
           <tr>
             <th className="text-end">Čtvrtek</th>
             <td>8:00-11:30</td>
-            <td>
-              12:30-16:00 <del>17:00</del>
-            </td>
+            <td>12:30-16:00</td>
           </tr>
           <tr>
             <th className="text-end">Pátek</th>
             <td>8:00-11:30</td>
-            <td>
-              12:30-16:00 <del>17:00</del>
-            </td>
+            <td>12:30-16:00</td>
           </tr>
           <tr>
             <th className="text-end">Sobota</th>
-            <td colSpan="2">9:00-11:00</td>
+            <td colSpan="2">9:00-12:00</td>
           </tr>
           <tr>
             <th className="text-end">Neděle</th>
