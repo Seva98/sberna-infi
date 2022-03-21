@@ -11,7 +11,7 @@ const QuickContacts = () => {
             <tr>
               <th>Tel.</th>
               <td>
-                <a href="tel:733488556">+420 733 488 556</a>
+                <a href="tel:721180812">+420 721 180 812</a>
               </td>
             </tr>
             <tr>
