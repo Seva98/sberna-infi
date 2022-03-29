@@ -33,7 +33,7 @@ const OpeningHours = () => {
           </tr>
           <tr>
             <th className="text-end">Sobota</th>
-            <td colSpan="2">9:00-12:00</td>
+            <td colSpan="2">9:00-11:00</td>
           </tr>
           <tr>
             <th className="text-end">Neděle</th>
