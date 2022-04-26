@@ -27,15 +27,15 @@ export default function Home({ materials, news, deviceType }) {
 
   return (
     <Layout>
-      {/* <section>
+      <section>
         <div className="row mx-auto justify-content-center align-items-center">
           <div className="badge bg-warning pt-3">
             <div className="h2" style={{ whiteSpace: 'pre-line' }}>
-              Během velikonočních svátků od pátku 15.4. do pondělí 18.4. bude zavřeno.
+              Važení zákaznici vzhledem k vývoji na trzích s komoditami se mohou ceny železa a mědi často měnit. Cenu vždy stanovujeme dle nabídky z hutí.
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
       <section>
         <div className="row mx-auto my-3 justify-content-center align-items-center gy-3" style={{ maxWidth: '1200px' }}>
           <div className="col-sm-9 mx-auto" style={{ cursor: 'pointer' }}>
