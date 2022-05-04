@@ -31,8 +31,11 @@ export default function Home({ materials, news, deviceType }) {
         <div className="row mx-auto justify-content-center align-items-center">
           <div className="badge bg-warning pt-3">
             <div className="h2" style={{ whiteSpace: 'pre-line' }}>
-              Vážení zákazníci v následujících týdnech očekáváme na burzách komodit výrazný pokles cen. Berte prosím na vědomi, že ceny se mohou skokové výrazně snížit! Ceny se
-              určují dle burzy a kontraktů z hutí.
+              Vážení zákazníci v následujících týdnech očekáváme na burzách komodit výrazný pokles cen.
+              <br />
+              Berte prosím na vědomi, že ceny se mohou skokové výrazně snížit!
+              <br />
+              Ceny se určují dle burzy a kontraktů z hutí.
             </div>
           </div>
         </div>
