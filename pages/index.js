@@ -27,19 +27,17 @@ export default function Home({ materials, news, deviceType }) {
 
   return (
     <Layout>
-      {/* <section>
+      <section>
         <div className="row mx-auto justify-content-center align-items-center">
           <div className="badge bg-warning pt-3">
             <div className="h2" style={{ whiteSpace: 'pre-line' }}>
-              Vážení zákazníci v následujících týdnech očekáváme na burzách komodit výrazný pokles cen.
+              Vážení zákazníci Sběrna Krmelín bude od 4.7. do 6.7. zavřená.
               <br />
-              Berte prosím na vědomi, že ceny se mohou skokové výrazně snížit!
-              <br />
-              Ceny se určují dle burzy a kontraktů z hutí.
+              Otevřeno bude od 7.7.
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
       <section>
         <div className="row mx-auto my-3 justify-content-center align-items-center gy-3" style={{ maxWidth: '1200px' }}>
           <div className="col-sm-9 mx-auto" style={{ cursor: 'pointer' }}>
