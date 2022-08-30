@@ -21,7 +21,7 @@ cookieconsent && cookieconsent.run({"notice_banner_type":"simple","consent_type"
             }}
           />
 
-          <script type="text/plain" cookie-consent="tracking" async src="https://www.googletagmanager.com/gtag/js?id=UA-125408616-1"></script>
+          <script type="text/plain" cookie-consent="tracking" async src="https://www.googletagmanager.com/gtag/js?id=UA-221702743-2"></script>
           <script
             type="text/plain"
             cookie-consent="tracking"
@@ -30,7 +30,7 @@ cookieconsent && cookieconsent.run({"notice_banner_type":"simple","consent_type"
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
-                gtag('config', 'UA-125408616-1');
+                gtag('config', 'UA-221702743-2');
           `,
             }}
           />
