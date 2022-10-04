@@ -36,9 +36,9 @@ const Navbar = () => {
             <div className={`nav-item nav-link me-4 ${router.pathname === '/cenik' && 'is-active'}`}>
               <Link href="/cenik">Ceník</Link>
             </div>
-            <div className={`nav-item nav-link me-4 ${router.pathname === '/sluzby' && 'is-active'}`}>
+            {/* <div className={`nav-item nav-link me-4 ${router.pathname === '/sluzby' && 'is-active'}`}>
               <Link href="/sluzby">Služby</Link>
-            </div>
+            </div> */}
             <div className={`nav-item nav-link me-4 ${router.pathname === '/kontakty' && 'is-active'}`}>
               <Link href="/kontakty">Kontakty</Link>
             </div>
