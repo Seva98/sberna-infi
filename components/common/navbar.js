@@ -23,11 +23,11 @@ const Navbar = () => {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <Link href="/">
+        {/* <Link href="/">
           <a className="navbar-brand">
             <Image src={logo} alt="logo" height="48" width="200" />
           </a>
-        </Link>
+        </Link> */}
         <div className={`${collapsed ? 'collapse' : ''} navbar-collapse`} id="navbarTogglerDemo03">
           <div className="navbar-nav ms-auto auto">
             <div className={`nav-item nav-link me-4 ${router.pathname === '/' && 'is-active'}`}>

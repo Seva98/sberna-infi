@@ -15,6 +15,7 @@ import Image from 'next/image';
 import bannerhavirov from '../assets/images/bannerhavirov.svg';
 import banner1 from '../assets/images/banner1.svg';
 import banner2 from '../assets/images/banner2.svg';
+import viking from '../assets/images/logo-viking.png';
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 
@@ -39,23 +40,30 @@ export default function Home({ materials, news, deviceType }) {
         </div>
       </section> */}
       <section>
-        <div className="row mx-auto my-3 justify-content-center align-items-center gy-3" style={{ maxWidth: '1200px' }}>
+        {/* <div className="row mx-auto my-3 justify-content-center align-items-center gy-3" style={{ maxWidth: '1200px' }}>
           <div className="col-sm-9 mx-auto" style={{ cursor: 'pointer' }}>
             <Link href="https://sbernahavirov.cz">
               <Image src={bannerhavirov} layout="responsive" objectFit="" width={999} height={218} alt="havirov" />
             </Link>
           </div>
-          <div className="col-sm-9 mx-auto shadow ">
-            <Image src={banner1} layout="responsive" objectFit="" width={999} height={218} alt="vraky" />
+        </div> */}
+        <div className="row align-items-center mx-auto" style={{ maxWidth: '1200px' }}>
+          <div className="col-sm-6">
+            <Image src={viking} layout="responsive" objectFit="" width={600} height={484} alt="viking" />
           </div>
-          <div className="col-sm-9 mx-auto shadow ">
-            <Image src={banner2} layout="responsive" objectFit="" width={999} height={218} alt="vozik" />
+          <div className="col-sm-6">
+            <div className="col-sm-12 mx-auto my-4 shadow ">
+              <Image src={banner1} layout="responsive" objectFit="" width={999} height={218} alt="vraky" />
+            </div>
+            <div className="col-sm-12 mx-auto shadow ">
+              <Image src={banner2} layout="responsive" objectFit="" width={999} height={218} alt="vozik" />
+            </div>
           </div>
-          {/* <div style={{ maxWidth: '16px' }}></div> */}
-          {/* <div className="col-sm-3 shadow" style={{ padding: '0', width: width >= 576 ? '23.58%' : '100%' }}>
+        </div>
+        {/* <div style={{ maxWidth: '16px' }}></div> */}
+        {/* <div className="col-sm-3 shadow" style={{ padding: '0', width: width >= 576 ? '23.58%' : '100%' }}>
             <Image src={banner2} layout="responsive" objectFit="contain" width={1430} height={958} alt="oteviracka" />
           </div> */}
-        </div>
       </section>
       <section>
         <div className="container">
