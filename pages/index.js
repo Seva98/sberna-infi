@@ -18,6 +18,7 @@ import banner2 from '../assets/images/banner2.svg';
 import viking from '../assets/images/logo-viking.png';
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
+import CrossIcon from '../components/icons/crossIcon';
 
 export default function Home({ materials, news, deviceType }) {
   const [session, loading] = useSession();
@@ -26,19 +27,25 @@ export default function Home({ materials, news, deviceType }) {
   const updateSize = () => setWidth(window.innerWidth);
   useEffect(() => (window.onresize = updateSize), []);
 
+  const [modal, setModal] = useState(false);
+
   return (
     <Layout>
-      {/* <section>
+      <section>
         <div className="row mx-auto justify-content-center align-items-center">
-          <div className="badge bg-warning pt-3">
-            <div className="h2" style={{ whiteSpace: 'pre-line' }}>
-              Vážení zákazníci Sběrna Krmelín bude od 4.7. do 6.7. zavřená.
-              <br />
-              Otevřeno bude od 7.7.
+          <div className="badge bg-danger pt-3">
+            <div className="h2 text-white" style={{ whiteSpace: 'pre-line' }}>
+              <div>
+                Velká Vánoční soutěž o tablet a další ceny
+                <br />
+                <div className="text-white" style={{ 'font-size': '20px', cursor: 'pointer' }} onClick={() => setModal(true)}>
+                  KLIKNI ZDE
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
       <section>
         {/* <div className="row mx-auto my-3 justify-content-center align-items-center gy-3" style={{ maxWidth: '1200px' }}>
           <div className="col-sm-9 mx-auto" style={{ cursor: 'pointer' }}>
@@ -100,6 +107,26 @@ export default function Home({ materials, news, deviceType }) {
           <InfoBottom />
         </div>
       </section>
+      {modal && (
+        <div style={{ position: 'fixed', top: '0', left: '0', width: '100%', height: '100%', background: 'rgba(0,0,0,0.75)' }} onClick={() => setModal(null)}>
+          <div style={{ position: 'absolute', textAlign: 'right', paddingRight: '10px', width: '100%', color: 'white', fontSize: '24px' }}>
+            <CrossIcon />
+          </div>
+          <div className="row" style={{ height: '100%', alignContent: 'center' }}>
+            <div className="col-12 text-center">
+              <Image
+                src={'/assets/images/image0.jpg'}
+                width={640}
+                height={452}
+                alt={'vanocni promo'}
+                objectFit="contain"
+                placeholder="blur"
+                blurDataURL="/assets/images/image0-blur.jpg"
+              />
+            </div>
+          </div>
+        </div>
+      )}
     </Layout>
   );
 }
