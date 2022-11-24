@@ -13,8 +13,10 @@ const Cenik = ({ mainCategories, categories, materials }) => {
 
   return (
     <Layout>
-      <div className="my-2 mx-auto" style={{ width: '250px', cursor: 'pointer' }} onClick={() => setPriceModal(true)}>
-        <Image src={lepsicena} layout="responsive" objectFit="" width={250} height={80} alt="lepsi cena" />
+      <div className="my-2 mx-auto" style={{ width: 'max-content', cursor: 'pointer' }} onClick={() => setPriceModal(true)}>
+        <button className="btn btn-danger" style={{ fontSize: '1.5rem', background: '#F70E11' }}>
+          Chcete lepší cenu?
+        </button>
       </div>
       <MainCategoriesSwitcher mainCategories={mainCategories} activeMainCategory={activeMainCategory} onChange={(c) => setMainCategory(c)} />
       <div className="text-center my-2">
