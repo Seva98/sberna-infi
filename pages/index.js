@@ -48,27 +48,6 @@ export default function Home({ materials, news, deviceType }) {
           </div>
         </section>
       )}
-
-      <section>
-        <div className="theme-bg-secondary py-5">
-          <Rema />
-        </div>
-      </section>
-      <section>
-        <div className="my-5">
-          <ReviewsCarousel deviceType={deviceType} />
-        </div>
-      </section>
-      <section>
-        <div className="theme-bg-primary py-4">
-          <GoogleMap />
-        </div>
-      </section>
-      <section>
-        <div className="theme-bg-primary py-4">
-          <GoogleMapHavirov />
-        </div>
-      </section>
       <section className=" theme-bg-secondary">
         <div className="container py-5">
           <InfoBottom />
