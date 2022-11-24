@@ -16,9 +16,11 @@ import bannerhavirov from '../assets/images/bannerhavirov.svg';
 import banner1 from '../assets/images/banner1.svg';
 import banner2 from '../assets/images/banner2.svg';
 import viking from '../assets/images/logo-viking.png';
+import lepsicena from '../assets/images/button_cena.png';
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import CrossIcon from '../components/icons/crossIcon';
+import PriceModal from '../components/common/priceModal';
 
 export default function Home({ materials, news, deviceType }) {
   const [session, loading] = useSession();
@@ -28,6 +30,7 @@ export default function Home({ materials, news, deviceType }) {
   useEffect(() => (window.onresize = updateSize), []);
 
   const [modal, setModal] = useState(false);
+  const [priceModal, setPriceModal] = useState(false);
 
   return (
     <Layout>
@@ -38,12 +41,15 @@ export default function Home({ materials, news, deviceType }) {
               <div>
                 Velká Vánoční soutěž o tablet a další ceny
                 <br />
-                <div className="text-white" style={{ 'font-size': '20px', cursor: 'pointer' }} onClick={() => setModal(true)}>
+                <div className="text-white" style={{ fontSize: '20px', cursor: 'pointer' }} onClick={() => setModal(true)}>
                   KLIKNI ZDE
                 </div>
               </div>
             </div>
           </div>
+        </div>
+        <div className="my-2 mx-auto" style={{ width: '250px', cursor: 'pointer' }} onClick={() => setPriceModal(true)}>
+          <Image src={lepsicena} layout="responsive" objectFit="" width={250} height={80} alt="lepsi cena" />
         </div>
       </section>
       <section>
@@ -62,9 +68,9 @@ export default function Home({ materials, news, deviceType }) {
             <div className="col-sm-12 mx-auto my-4 shadow ">
               <Image src={banner1} layout="responsive" objectFit="" width={999} height={218} alt="vraky" />
             </div>
-            <div className="col-sm-12 mx-auto shadow ">
+            {/* <div className="col-sm-12 mx-auto shadow ">
               <Image src={banner2} layout="responsive" objectFit="" width={999} height={218} alt="vozik" />
-            </div>
+            </div> */}
           </div>
         </div>
         {/* <div style={{ maxWidth: '16px' }}></div> */}
@@ -127,6 +133,7 @@ export default function Home({ materials, news, deviceType }) {
           </div>
         </div>
       )}
+      {priceModal && <PriceModal onClose={() => setPriceModal(null)} />}
     </Layout>
   );
 }
