@@ -132,6 +132,15 @@ export default function Home({ materials, news, deviceType }) {
                 blurDataURL="/assets/images/image0-blur.jpg"
               />
             </div>
+            <div className="col-12 text-center">
+              <a
+                href="https://www.facebook.com/sbernahavirov.cz/posts/pfbid02rwxhBZp2HutSPuhmkYYWZHjyu6Ppn5zRdNF1CGQoUUVbKaaj3LEGRTjmwxdDb1DBl"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <button className="btn btn-primary">Podmínky soutěže</button>
+              </a>
+            </div>
           </div>
         </div>
       )}
