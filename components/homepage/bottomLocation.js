@@ -7,6 +7,10 @@ const BottomLocation = () => {
           <td>CZT01353</td>
         </tr>
         <tr>
+          <td></td>
+          <td>CZT01161</td>
+        </tr>
+        <tr>
           <th>Elektroodpady</th>
           <td>CZT01244</td>
         </tr>

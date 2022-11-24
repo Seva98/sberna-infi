@@ -1,46 +1,16 @@
 import ClockIcon from '../icons/clockIcon';
 import ShortInfo from '../common/shortInfo';
+import Image from 'next/image';
 
 const OpeningHours = () => {
   return (
-    <ShortInfo icon={<ClockIcon className="mb-4" />} title="Otevírací doba">
-      <table className="table">
-        <tbody>
-          <tr>
-            <th className="text-end">Pondělí</th>
-            <td>8:00-11:30</td>
-            <td>12:30-16:00</td>
-          </tr>
-          <tr>
-            <th className="text-end">Úterý</th>
-            <td>8:00-11:30</td>
-            <td>12:30-16:00</td>
-          </tr>
-          <tr>
-            <th className="text-end">Středa</th>
-            <td>8:00-11:30</td>
-            <td>12:30-16:00</td>
-          </tr>
-          <tr>
-            <th className="text-end">Čtvrtek</th>
-            <td>8:00-11:30</td>
-            <td>12:30-16:00</td>
-          </tr>
-          <tr>
-            <th className="text-end">Pátek</th>
-            <td>8:00-11:30</td>
-            <td>12:30-16:00</td>
-          </tr>
-          <tr>
-            <th className="text-end">Sobota</th>
-            <td colSpan="2">9:00-11:00</td>
-          </tr>
-          <tr>
-            <th className="text-end">Neděle</th>
-            <td colSpan="2">Zavřeno</td>
-          </tr>
-        </tbody>
-      </table>
+    <ShortInfo icon={<ClockIcon className="mb-4" />} title="Mobilní aplikace">
+      <a href="https://play.google.com/store/apps/details?id=com.sevcikdev.sbernakrmelin" target="_blank" rel="noreferrer">
+        <Image src="/assets/images/google-play.svg" width={256} height={80} alt="Google play app" />
+      </a>
+      <a href="https://apps.apple.com/cz/app/cen%C3%ADk-kovu/id1603506834?l=cs" target="_blank" rel="noreferrer">
+        <Image src="/assets/images/appstore.svg" width={256} height={80} alt="Google play app" />
+      </a>
     </ShortInfo>
   );
 };

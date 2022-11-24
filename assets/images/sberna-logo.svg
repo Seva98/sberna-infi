@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="282px" height="77px" viewBox="0 0 282 77" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group</title>
+    <g id="Sberna-Havirov" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group">
+            <rect id="Rectangle" fill="#FFFFFF" x="0" y="0" width="282" height="76"></rect>
+            <text id="SBĚRNA" font-family="AvenirNext-Bold, Avenir Next" font-size="38" font-weight="bold" fill="#03B0EF">
+                <tspan x="92.645" y="43">SBĚRNA</tspan>
+            </text>
+            <text id="HAVÍŘOV" font-family="AvenirNext-Bold, Avenir Next" font-size="21" font-weight="bold" fill="#5A5A57">
+                <tspan x="98.2655" y="64">HAVÍŘOV</tspan>
+            </text>
+            <g id="Znak" transform="translate(19.000000, 15.000000)">
+                <path d="M35.5674202,5.7042739 L35.5674202,42.5371796 L0.5,52.3410416 L0.5,17.9532668 L35.5674202,5.7042739 Z" id="Rectangle-Copy-2" stroke="#FFFEFE" fill="#585856"></path>
+                <path d="M66.5,0.704273903 L66.5,37.5371796 L31.4325798,47.3410416 L31.4325798,12.9532668 L66.5,0.704273903 Z" id="Rectangle-Copy" stroke="#FAFAFA" fill="#585856"></path>
+                <path d="M39.1387369,15.7042739 L39.1387369,35.1587534 L20.6022177,40.3410416 L20.6022177,22.17905 L39.1387369,15.7042739 Z" id="Rectangle" stroke="#FFFFFF" fill="#00B3F2"></path>
+            </g>
+        </g>
+    </g>
+</svg>

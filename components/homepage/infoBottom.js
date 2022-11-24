@@ -5,18 +5,19 @@ import BookIcon from '../icons/bookIcon';
 import BottomAbout from './bottomAbout';
 import HouseIcon from '../icons/houseIcon';
 import BottomLocation from './bottomLocation';
+import BottomAboutHavirov from './bottomAboutHavirov';
 
 const InfoBottom = ({ materials }) => {
   return (
     <div className="row">
       <div className="col">
-        <Card icon={<BurgerIcon className="me-2 align-top" />} title="Menu">
-          <BottomMenu />
+        <Card icon={<BookIcon className="me-2 align-top" />} title="Sběrna Krmelín">
+          <BottomAbout />
         </Card>
       </div>
       <div className="col">
-        <Card icon={<BookIcon className="me-2 align-top" />} title="Firemní údaje">
-          <BottomAbout />
+        <Card icon={<BookIcon className="me-2 align-top" />} title="Sběrna Havířov">
+          <BottomAboutHavirov />
         </Card>
       </div>
       <div className="col">

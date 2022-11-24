@@ -12,7 +12,7 @@ const Kontakty = () => {
     <Layout>
       <section className="theme-bg-primary py-4">
         <div className="container">
-          <h1>Kontakty</h1>
+          <h1>Sběrna Krmelín</h1>
           <div className="row">
             <div className="col-12">
               <ContactsCard image={sberna} name="Sběrna Krmelín" subtitle="Provozovatel LH Store s.r.o." phone="+420 721 180 812" email="info@sbernakrmelin.cz">
@@ -44,6 +44,46 @@ const Kontakty = () => {
             </div>
             <div className="col-md-6 col-xl-3">
               <ContactsCard image={terka} name="Ing. Tereza Hrebíková" subtitle="Ekonom" phone="+420 721 913 428" email="hrebikova@lhstore.cz" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div className="pt-4">
+          <GoogleMap />
+        </div>
+      </section>
+      <section className="theme-bg-primary py-4">
+        <div className="container">
+          <h1>Sběrna Havířov</h1>
+          <div className="row">
+            <div className="col-12">
+              <ContactsCard
+                image={sberna}
+                name="Sběrna Havířov"
+                subtitle="Provozovatel Tera Industry s.r.o."
+                phone="+420 733 488 556"
+                email="info@sbernahavirov.cz"
+              >
+                <div className="text-center mb-3">
+                  U Závor 591/3
+                  <br />
+                  736 01 Havířov
+                  <br />
+                  IČ 142 75 490
+                  <br />
+                  DIČ CZ142 75 490
+                  <br />
+                  Datová schránka: 28q4pe
+                  <br />
+                  E-mail: <a href="mailto:info@sbernahavirov.cz">info@sbernahavirov.cz</a>
+                </div>
+              </ContactsCard>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col">
+              <ContactsCard image={sykora} name="Radek Orság" subtitle="Jednatel" phone="+420 733 488 556" email="info@sbernahavirov.cz" />
             </div>
           </div>
         </div>

@@ -4,20 +4,11 @@ import Layout from '../../components/common/layout';
 import MainCategoriesSwitcher from '../../components/prices/mainCategoriesSwitcher';
 import MaterialsTable from '../../components/prices/materialsTable';
 import { connectToDatabase } from '../../lib/mongodb';
-import lepsicena from '../../assets/images/button_cena.png';
-import PriceModal from '../../components/common/priceModal';
 
 const Cenik = ({ mainCategories, categories, materials }) => {
   const [activeMainCategory, setMainCategory] = useState(mainCategories[0]._id);
-  const [priceModal, setPriceModal] = useState(false);
-
   return (
     <Layout>
-      <div className="my-2 mx-auto" style={{ width: 'max-content', cursor: 'pointer' }} onClick={() => setPriceModal(true)}>
-        <button className="btn btn-danger" style={{ fontSize: '1.5rem', background: '#F70E11' }}>
-          Chcete lepší cenu?
-        </button>
-      </div>
       <MainCategoriesSwitcher mainCategories={mainCategories} activeMainCategory={activeMainCategory} onChange={(c) => setMainCategory(c)} />
       <div className="text-center my-2">
         <a href="https://play.google.com/store/apps/details?id=com.sevcikdev.sbernakrmelin" className="me-2" target="_blank" rel="noreferrer">
@@ -30,7 +21,6 @@ const Cenik = ({ mainCategories, categories, materials }) => {
       <div className="container">
         <MaterialsTable materials={materials} categories={categories} activeMainCategory={activeMainCategory} />
       </div>
-      {priceModal && <PriceModal onClose={() => setPriceModal(null)} />}
     </Layout>
   );
 };
