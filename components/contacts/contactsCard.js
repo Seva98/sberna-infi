@@ -3,6 +3,7 @@ import PhoneIcon from '../icons/phoneIcon';
 import MailIcon from '../icons/mailIcon';
 
 const ContactsCard = ({ name, subtitle, phone, email, image, children }) => {
+  const isEn = () => typeof window !== 'undefined' && window.location.href.includes('/en');
   return (
     <div className="card border-0 shadow-lg pt-5 my-5 position-relative">
       <div className="card-body">
@@ -18,7 +19,7 @@ const ContactsCard = ({ name, subtitle, phone, email, image, children }) => {
               <table className="table mx-auto w-auto table-contact">
                 <tbody>
                   <tr>
-                    <th className="px-0">Telefon</th>
+                    <th className="px-0 pe-1">{isEn() ? 'Phone' : 'Telefon'}</th>
                     <td className="px-0">
                       <a href={`tel:${phone.replace(/\s/g, '')}`}>{phone}</a>
                     </td>

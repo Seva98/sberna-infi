@@ -1,17 +1,18 @@
 const BottomAbout = () => {
+  const isEn = () => typeof window !== 'undefined' && window.location.href.includes('/en');
   return (
     <table className="table">
       <tbody>
         <tr>
-          <th>IČO</th>
+          <th>{isEn() ? 'ID' : 'IČO'}</th>
           <td>27801586</td>
         </tr>
         <tr>
-          <th>DIČ</th>
+          <th>{isEn() ? 'VAT' : 'DIČ'}</th>
           <td>CZ27801586</td>
         </tr>
         <tr>
-          <th>Adresa</th>
+          <th>{isEn() ? 'Address' : 'Adresa'}</th>
           <td>
             Staroveská 567
             <br />
@@ -21,7 +22,7 @@ const BottomAbout = () => {
           </td>
         </tr>
         <tr>
-          <th>Banka</th>
+          <th>{isEn() ? 'Bank' : 'Banka'}</th>
           <td>
             Raiffeisen
             <br />

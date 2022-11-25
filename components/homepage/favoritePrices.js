@@ -4,9 +4,10 @@ import { useRouter } from 'next/router';
 
 const FavoritePrices = ({ materials }) => {
   const router = useRouter();
+  const isEn = () => typeof window !== 'undefined' && window.location.href.includes('/en');
 
   return (
-    <ShortInfo icon={<PriceIcon className="mb-4" />} title="Aktuální ceny">
+    <ShortInfo icon={<PriceIcon className="mb-4" />} title={isEn() ? `Current Price List` : `Aktuální ceny`}>
       <table className="table">
         <tbody>
           {materials &&
@@ -21,7 +22,7 @@ const FavoritePrices = ({ materials }) => {
         </tbody>
       </table>
       <button className="btn theme-btn-ghost w-100 mb-2" onClick={() => router.push('/cenik')}>
-        Kompletní ceník
+        {isEn() ? 'Complete Price List' : 'Kompletní ceník'}
       </button>
     </ShortInfo>
   );

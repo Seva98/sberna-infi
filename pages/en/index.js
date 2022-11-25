@@ -1,13 +1,13 @@
-import Layout from '../components/common/layout';
-import { connectToDatabase } from '../lib/mongodb';
-import InfoTop from '../components/homepage/infoTop';
-import InfoBottom from '../components/homepage/infoBottom';
-import News from '../components/homepage/news';
+import Layout from '../../components/common/layout';
+import { connectToDatabase } from '../../lib/mongodb';
+import InfoTop from '../../components/homepage/infoTop';
+import InfoBottom from '../../components/homepage/infoBottom';
+import News from '../../components/homepage/news';
 import Image from 'next/image';
-import viking from '../assets/images/logo-viking.png';
-import sbernaLogo from '../assets/images/sberna-logo.svg';
+import viking from '../../assets/images/logo-viking.png';
+import sbernaLogo from '../../assets/images/sberna-logo.svg';
 import { useEffect, useState } from 'react';
-import CrossIcon from '../components/icons/crossIcon';
+import CrossIcon from '../../components/icons/crossIcon';
 
 export default function Home({ materials, news, deviceType }) {
   const [width, setWidth] = useState(576);

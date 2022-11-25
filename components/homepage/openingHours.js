@@ -3,8 +3,10 @@ import ShortInfo from '../common/shortInfo';
 import Image from 'next/image';
 
 const OpeningHours = () => {
+  const isEn = () => typeof window !== 'undefined' && window.location.href.includes('/en');
+
   return (
-    <ShortInfo icon={<ClockIcon className="mb-4" />} title="Mobilní aplikace">
+    <ShortInfo icon={<ClockIcon className="mb-4" />} title={isEn() ? 'Mobile Applications' : 'Mobilní aplikace'}>
       <a href="https://play.google.com/store/apps/details?id=com.sevcikdev.sbernakrmelin" target="_blank" rel="noreferrer">
         <Image src="/assets/images/google-play.svg" width={256} height={80} alt="Google play app" />
       </a>

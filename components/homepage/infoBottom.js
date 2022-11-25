@@ -8,6 +8,7 @@ import BottomLocation from './bottomLocation';
 import BottomAboutHavirov from './bottomAboutHavirov';
 
 const InfoBottom = ({ materials }) => {
+  const isEn = () => typeof window !== 'undefined' && window.location.href.includes('/en');
   return (
     <div className="row">
       <div className="col">
@@ -21,7 +22,7 @@ const InfoBottom = ({ materials }) => {
         </Card>
       </div>
       <div className="col">
-        <Card icon={<HouseIcon className="me-2 align-top" />} title="Provozovny">
+        <Card icon={<HouseIcon className="me-2 align-top" />} title={isEn() ? 'Establishments' : 'Provozovny'}>
           <BottomLocation />
         </Card>
       </div>
