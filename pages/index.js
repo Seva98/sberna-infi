@@ -5,7 +5,7 @@ import InfoBottom from '../components/homepage/infoBottom';
 import News from '../components/homepage/news';
 import Image from 'next/image';
 import viking from '../assets/images/logo-viking.png';
-import sbernaLogo from '../assets/images/sberna-logo.svg';
+import buchta from '../assets/images/buchta.png';
 import { useEffect, useState } from 'react';
 import CrossIcon from '../components/icons/crossIcon';
 
@@ -27,7 +27,7 @@ export default function Home({ materials, news, deviceType }) {
           </div>
           <div className="col-sm-6">
             <a href="https://sbernahavirov.cz">
-              <Image src={sbernaLogo} layout="responsive" objectFit="" width={600} height={150} alt="viking" />
+              <Image src={buchta} layout="responsive" objectFit="" width={600} height={150} alt="viking" />
             </a>
           </div>
         </div>
