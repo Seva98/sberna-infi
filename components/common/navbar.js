@@ -38,7 +38,7 @@ const Navbar = () => {
               <Link href={isEn() ? '/en/cenik' : '/cenik'}>{isEn() ? 'Price List' : 'Ceník'}</Link>
             </div>
             <div className={`nav-item nav-link me-4 ${router.pathname === '/svoz' && 'is-active'}`}>
-              <Link href={isEn() ? '/en/svoz' : '/svoz'}>{isEn() ? 'Pick Up' : 'Svoz'}</Link>
+              <Link href={isEn() ? '/en/svoz' : '/svoz'}>{isEn() ? 'Collection' : 'Svoz'}</Link>
             </div>
             <div className={`nav-item nav-link me-4 ${router.pathname === '/demolice' && 'is-active'}`}>
               <Link href={isEn() ? '/en/demolice' : '/demolice'}>{isEn() ? 'Demolition' : 'Demolice'}</Link>
