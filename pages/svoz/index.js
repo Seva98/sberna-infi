@@ -24,7 +24,7 @@ const Svoz = () => {
       <Layout>
         <section className="theme-bg-primary py-4">
           <div className="container">
-            <h1>Demolice</h1>
+            <h1>Svoz</h1>
             <div className="card border-0 shadow-lg my-5 position-relative" style={{ maxWidth: '1000px', margin: '0 auto' }}>
               <div className="card-body">
                 <div className="card-text pt-1">
