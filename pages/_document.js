@@ -21,19 +21,21 @@ cookieconsent && cookieconsent.run({"notice_banner_type":"simple","consent_type"
             }}
           />
 
-          <script type="text/plain" cookie-consent="tracking" async src="https://www.googletagmanager.com/gtag/js?id=UA-221702743-2"></script>
+          <script type="text/plain" cookie-consent="tracking" async src="https://www.googletagmanager.com/gtag/js?id=G-Z1WK1KJN4H"></script>
           <script
             type="text/plain"
             cookie-consent="tracking"
             dangerouslySetInnerHTML={{
               __html: `
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', 'UA-221702743-2');
-          `,
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-Z1WK1KJN4H');
+            `,
             }}
-          />
+          >
+              
+          </script>
 
           <script
             type="text/plain"
