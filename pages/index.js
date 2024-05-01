@@ -8,6 +8,7 @@ import viking from '../assets/images/logo-viking.png';
 import buchta from '../assets/images/buchta.png';
 import { useEffect, useState } from 'react';
 import CrossIcon from '../components/icons/crossIcon';
+import Link from 'next/link';
 
 export default function Home({ materials, news, deviceType }) {
   const [width, setWidth] = useState(576);
@@ -20,16 +21,40 @@ export default function Home({ materials, news, deviceType }) {
     <Layout>
       <section>
         <div className="row align-items-center mx-auto" style={{ maxWidth: '1200px' }}>
-          <div className="col-sm-6">
-            <a href="https://sbernakrmelin.cz">
-              <Image src={viking} layout="responsive" objectFit="" width={600} height={484} alt="viking" />
-            </a>
+          <div className="col-sm-3" />
+          <div className="col-sm-6 row align-items-center">
+            <div className="col-sm-6">
+              <a href="https://sbernakrmelin.cz">
+                <Image src={viking} layout="responsive" objectFit="" width={600} height={484} alt="viking" className="mt-auto mb-0" />
+              </a>
+            </div>
+            <div className="col-sm-6">
+              <a href="https://sbernahavirov.cz">
+                <Image src={buchta} layout="responsive" objectFit="" width={600} height={484} alt="viking" />
+              </a>
+            </div>
           </div>
+          <div className="col-sm-3" />
+        </div>
+        <div className="row align-items-center mx-auto " style={{ maxWidth: '1200px' }}>
+          <div className="col-sm-3" />
           <div className="col-sm-6">
-            <a href="https://sbernahavirov.cz">
-              <Image src={buchta} layout="responsive" objectFit="" width={600} height={150} alt="viking" />
-            </a>
+            <div className="row mx-auto shadow justify-content-center align-items-center" style={{ maxWidth: '600px' }}>
+              <div className="text-center  p-4 col-sm-9">
+                <div className="h5 mt-0 mb-2">Nově měříme na počkání drahé kovy</div>
+                <Link href="/cenik?category=661fe0a0a871da4073b327e1">
+                  <div className="btn theme-btn-ghost w-50">Ceník drahých kovů</div>
+                </Link>
+                <div className="h5 mt-2">
+                  Máte otázky? Volejte <a href="tel:+420724330834">724 330 834</a>
+                </div>
+              </div>
+              <div className="col-sm-3">
+                <Image src={'/assets/images/mereni.jpeg'} layout="responsive" objectFit width={150} height={150} alt="mereni" />
+              </div>
+            </div>
           </div>
+          <div className="col-sm-3" />
         </div>
       </section>
       <section>

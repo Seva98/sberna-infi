@@ -5,7 +5,7 @@ import QuickContacts from './quickContacts';
 const InfoTop = ({ materials }) => {
   return (
     <div className="row" style={{ justifyContent: 'center' }}>
-      <OpeningHours />
+      {/* <OpeningHours /> */}
       <FavoritePrices materials={materials} />
     </div>
   );
